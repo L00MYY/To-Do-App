@@ -20,8 +20,14 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 54, 79, 99),
+        titleTextStyle: const TextStyle(
+          color: Colors.white,
+          fontSize: 20.0
+        ),
         title: const Text('Bienvenido a tu app lista de tareas.'),
       ),
+      backgroundColor: const Color.fromARGB(255, 54, 79, 99),
       body: loginForm(),
     );
   }
@@ -34,5 +40,7 @@ Widget loginForm() {
     ),
   );
 }
+
+
 
 
